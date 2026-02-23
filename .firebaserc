@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "taxipro-backend-v2"
+  },
+  "targets": {
+    "taxipro-backend-v2": {
+      "hosting": {
+        "admin-site": [
+          "taxipro-backend-v2"
+        ]
+      }
+    }
+  }
+}
