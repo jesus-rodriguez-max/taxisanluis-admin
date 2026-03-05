@@ -8,10 +8,9 @@ export function usePassengers() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Query users collection. Assuming 'role' field differentiates or we just fetch all 'users' collection as passengers.
-        // Based on previous chats, 'users' collection is likely for passengers.
+        // Source of truth para pasajeros
         const q = query(
-            collection(db, 'users'),
+            collection(db, 'passengers'),
             orderBy('createdAt', 'desc')
         );
 

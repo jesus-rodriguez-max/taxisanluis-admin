@@ -101,15 +101,15 @@ export function LiveMap({ drivers, trips, selectedTrip }: MapProps) {
             <Marker
               key={driver.id}
               position={[driver.location.lat, driver.location.lng]}
-              icon={driver.online ? driverOnlineIcon : driverOfflineIcon}
+              icon={driver.isOnline ? driverOnlineIcon : driverOfflineIcon}
             >
               <Popup>
                 <div className="text-sm">
                   <p className="font-bold">{driver.name}</p>
                   <p className="text-xs text-gray-600">{driver.vehicle?.brand} {driver.vehicle?.model}</p>
                   <p className="text-xs">{driver.vehicle?.plates}</p>
-                  <p className={`text-xs font-semibold ${driver.online ? 'text-green-600' : 'text-gray-500'}`}>
-                    {driver.online ? '🟢 Online' : '⚫ Offline'}
+                  <p className={`text-xs font-semibold ${driver.isOnline ? 'text-green-600' : 'text-gray-500'}`}>
+                    {driver.isOnline ? '🟢 Online' : '⚫ Offline'}
                   </p>
                   <p className={`text-xs ${driver.subscriptionActive ? 'text-green-600' : 'text-red-600'}`}>
                     {driver.subscriptionActive ? '✓ Suscripción activa' : '✗ Suscripción vencida'}

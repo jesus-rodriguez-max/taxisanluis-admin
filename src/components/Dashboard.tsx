@@ -191,7 +191,7 @@ export function Dashboard() {
                     <div className="grid grid-cols-2 gap-2">
                       <div className="bg-green-50 p-2 rounded border border-green-100">
                         <p className="text-xs text-green-700">Online</p>
-                        <p className="font-bold text-green-900 text-lg">{drivers.filter(d => d.online).length}</p>
+                        <p className="font-bold text-green-900 text-lg">{drivers.filter(d => d.isOnline).length}</p>
                       </div>
                       <div className="bg-blue-50 p-2 rounded border border-blue-100">
                         <p className="text-xs text-blue-700">Viajes</p>

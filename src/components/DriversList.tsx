@@ -14,7 +14,7 @@ export function DriversList({ drivers, onSelectDriver }: DriversListProps) {
   const filteredDrivers = useMemo(() => {
     switch (filter) {
       case 'online':
-        return drivers.filter((d) => d.online);
+        return drivers.filter((d) => d.isOnline);
       case 'issues':
         return drivers.filter((d) =>
           !d.subscriptionActive || !d.stripeChargesEnabled || (d.status !== 'verified' && d.status !== 'active')
@@ -109,9 +109,9 @@ function DriverCard({ driver, onClick }: DriverCardProps) {
         </div>
 
         <div className="text-right">
-          <span className={`inline-block px-2 py-1 rounded text-xs font-semibold ${driver.online ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'
+          <span className={`inline-block px-2 py-1 rounded text-xs font-semibold ${driver.isOnline ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'
             }`}>
-            {driver.online ? '🟢 Online' : '⚫ Offline'}
+            {driver.isOnline ? '🟢 Online' : '⚫ Offline'}
           </span>
         </div>
       </div>

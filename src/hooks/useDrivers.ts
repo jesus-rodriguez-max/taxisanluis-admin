@@ -47,7 +47,7 @@ export function useOnlineDrivers() {
     // Escuchar solo conductores online
     const q = query(
       collection(db, 'drivers'),
-      where('online', '==', true),
+      where('isOnline', '==', true),
       where('status', '==', 'verified')
     );
 

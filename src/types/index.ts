@@ -8,7 +8,7 @@ export interface Driver {
   phone: string;
   email: string;
   status: 'verified' | 'active' | 'inactive' | 'suspended';
-  online: boolean;
+  isOnline: boolean;
   stripeAccountId: string | null;
   stripeStatus: 'pending' | 'verified' | 'restricted';
   stripeChargesEnabled: boolean;

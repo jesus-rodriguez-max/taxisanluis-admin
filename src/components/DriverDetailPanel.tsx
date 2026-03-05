@@ -28,8 +28,8 @@ export function DriverDetailPanel({ driver, onClose }: DriverDetailPanelProps) {
                         <div>
                             <h2 className="text-xl font-bold text-gray-900 leading-tight">{driver.name}</h2>
                             <div className="flex items-center gap-2 text-sm mt-1">
-                                <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${driver.online ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'}`}>
-                                    {driver.online ? '🟢 Online' : '⚫ Offline'}
+                                <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${driver.isOnline ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'}`}>
+                                    {driver.isOnline ? '🟢 Online' : '⚫ Offline'}
                                 </span>
                                 <span className="flex items-center text-yellow-500 font-bold">
                                     <Star size={14} className="fill-current mr-1" />

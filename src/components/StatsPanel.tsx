@@ -14,7 +14,7 @@ export function StatsPanel({ drivers, trips }: StatsProps) {
     return {
       // Conductores
       totalDrivers: drivers.length,
-      onlineDrivers: drivers.filter((d) => d.online).length,
+      onlineDrivers: drivers.filter((d) => d.isOnline).length,
       activeDrivers: drivers.filter((d) => d.status === 'active').length,
       withValidSubscription: drivers.filter((d) => d.subscriptionActive).length,
       withStripeIssues: drivers.filter((d) => !d.stripeChargesEnabled && d.status === 'active').length,

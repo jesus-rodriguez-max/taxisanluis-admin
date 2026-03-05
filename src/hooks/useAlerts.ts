@@ -53,7 +53,7 @@ export function useAlerts(
             trip.driverId
           ) {
             const driver = drivers.find((d) => d.id === trip.driverId);
-            if (driver && !driver.online) {
+            if (driver && !driver.isOnline) {
               newAlerts.push({
                 id: `driver-offline-${trip.id}`,
                 type: 'danger',
@@ -74,7 +74,7 @@ export function useAlerts(
         try {
           const isVerified = driver.status === 'verified' || driver.status === 'active';
           if (
-            driver.online &&
+            driver.isOnline &&
             isVerified &&
             !driver.stripeChargesEnabled
           ) {
