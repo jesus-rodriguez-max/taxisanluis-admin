@@ -94,7 +94,7 @@ export function Dashboard() {
           {/* Logo Area */}
           <div className="h-16 flex items-center justify-center border-b border-gray-100 bg-blue-600 text-white">
             <div className={`flex items-center gap-2 font-bold transition-all ${!sidebarOpen ? 'md:hidden lg:flex' : ''}`}>
-              <span className="text-xl">🚖 TaxiPro</span>
+              <span className="text-xl">🚖 Taxi San Luis</span>
             </div>
             {!sidebarOpen && <span className="hidden md:block lg:hidden text-xl">🚕</span>}
           </div>

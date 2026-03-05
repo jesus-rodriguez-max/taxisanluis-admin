@@ -33,11 +33,11 @@ export function SplashScreen({ onFinish }: SplashScreenProps) {
             <div className="relative flex flex-col items-center animate-pulse">
                 <img
                     src={logo}
-                    alt="TaxiPro Logo"
+                    alt="Taxi San Luis Logo"
                     className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl mb-4"
                 />
                 <h1 className="text-3xl md:text-5xl font-bold text-white tracking-widest drop-shadow-lg">
-                    TaxiPro
+                    Taxi San Luis
                 </h1>
                 <p className="text-blue-200 mt-2 tracking-wider text-sm md:text-base uppercase">
                     Panel de Control

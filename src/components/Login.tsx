@@ -94,7 +94,7 @@ export function Login() {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="inline-block p-3 rounded-full bg-white/10 mb-4 border border-white/10 shadow-inner">
-            <img src={logo} alt="TaxiPro" className="w-16 h-16 object-contain" />
+            <img src={logo} alt="Taxi San Luis" className="w-16 h-16 object-contain" />
           </div>
           <h1 className="text-3xl font-bold text-white mb-1 tracking-tight">taxi<span className="text-blue-400">pro</span></h1>
           <p className="text-gray-300 text-sm font-light tracking-wider uppercase">Panel de Control</p>
@@ -115,7 +115,7 @@ export function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all"
-              placeholder="admin@taxipro.com"
+              placeholder="admin@taxisanluis.com"
             />
           </div>
 
